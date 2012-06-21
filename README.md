@@ -1,18 +1,18 @@
 SublimeLog
 ==========
 
-A bare-bones console logger for Sublime Editor 2.
+A bare-bones console logger for Sublime Text 2.
 
 
 ### Description
 
-Sublime Editor 2 provides a console (accessible via ``Control-` ``) for interaction with its Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
+Sublime Text 2 provides a console (accessible via ``Control-` ``) for interaction with its Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
 
-The log file is erased and recreated every time Sublime Editor is launched.
+The log file is erased and recreated every time Sublime Text is launched.
 
 ### Installation
 
-At some point I will submit this to [Will Bond's](http://wbond.net/) excellent [Package Control](http://wbond.net/sublime_packages/package_control/package_developers) repository for easy installation. For now, please install manually by cloning (or copying the contents of) this repository into your Sublime Editor `./Packages` folder (or the `./Packages/User` subfolder to prevent overwrites whenever Sublime Editor is upgraded).
+At some point I will submit this to [Will Bond's](http://wbond.net/) excellent [Package Control](http://wbond.net/sublime_packages/package_control/package_developers) repository for easy installation. For now, please install manually by cloning (or copying the contents of) this repository into your Sublime Text `./Packages` folder (or the `./Packages/User` subfolder to prevent overwrites whenever Sublime Text is upgraded).
 
 ### Commands
 
@@ -38,7 +38,7 @@ You may change this in the file:
     
 Whatever path-filename you enter there is relative to your root folder, so please be sure you have adequate write permissions or the plug-in will complain politely.
 
-Also note that Sublime Editor must be restarted for changes to take effect.
+Also note that Sublime Text must be restarted for changes to take effect.
 
 ### Serving suggestion
 
@@ -46,7 +46,7 @@ I created this to complement my LaTeX workflow during my dissertation writing. I
 
     tail -f ~/.subl.log
 
-This allows me to selectively view and store the Sublime Editor console stream in real-time, and in a separate window, without having to open and close the console itself.
+This allows me to selectively view and store the Sublime Text console stream in real-time, and in a separate window, without having to open and close the console itself.
 
 
 Available under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Feel free to modify and redistribute.
