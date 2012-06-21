@@ -1,3 +1,8 @@
+# SublimeLog v. 0.1
+# MIT License, feel free to modify and distribute, no warranties, etc.
+# (c) 2012, Yannis Rammos
+
+
 import sublime_plugin
 import sys
 import sublime
@@ -24,7 +29,7 @@ class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
             self.logfile = open(os.path.abspath(self.logfilename), "w", 0)
             self.logfile.truncate(0)
         except:
-            sublime.status_message("Error opening log file (" + str(self.logfilename) + ").")
+            sublime.status_message("SublimeLog: Error opening log file (" + str(self.logfilename) + ").")
             self.ready = False
             return
 
@@ -34,18 +39,18 @@ class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
         if self.ready:
             if not self.active:
                 self.active = True
-                sublime.status_message("Console logging activated (" + self.logfilename + ").")
+                sublime.status_message("SublimeLog: Console logging activated (" + self.logfilename + ").")
                 sys.stdout = self
                 sys.stderr = self
                 print "=> => => Console logging activated (" + self.logfilename + "). Timestamp: " + time.strftime("%d %b %Y, %X", time.localtime()) + "."
             else:
                 self.active = False
-                sublime.status_message("Console logging deactivated (" + self.logfilename + ").")
+                sublime.status_message("SublimeLog: Console logging deactivated (" + self.logfilename + ").")
                 print "<= <= <= Console logging deactivated (" + self.logfilename + "). Timestamp: " + time.strftime("%d %b %Y, %X", time.localtime()) + "."
                 sys.stdout = self.out_backup
                 sys.stderr = self.err_backup
         else:
-            sublime.status_message("Error opening log file (" + str(self.logfilename) + ").")
+            sublime.status_message("SublimeLog: Error opening log file (" + str(self.logfilename) + ").")
             return
 
     def write(self, message):
