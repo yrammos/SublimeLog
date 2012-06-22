@@ -12,19 +12,19 @@ import time
 
 class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
     def __init__(self):
-        # First we backup standard input and output pipes.
+        # First we backup the standard input and output pipes.
         self.active = False
         self.ready = True
         self.out_backup = sys.stdout
         self.err_backup = sys.stderr
 
-        # Then we obtain the log filename from settings, if available, otherwise use default.
+        # Then we obtain the log filename from the settings, if available. Otherwise use a default value.
         # Path handling should be cross-platform but has only been tested on OS X (for lack of access to other systems).
         settings = sublime.load_settings("LogConsoleOutput.sublime-settings")
         self.logfilename = os.path.abspath(settings.get("logfile", os.path.join(os.path.expanduser("~"), ".subl.log")))
         print self.logfilename
 
-        # We open and truncate log file, or create a blank one if one doesn't exist, or there's an exception and we exit.
+        # We open and truncate log file, or create a blank one. In case of an exception we exit.
         try:
             self.logfile = open(os.path.abspath(self.logfilename), "w", 0)
             self.logfile.truncate(0)
