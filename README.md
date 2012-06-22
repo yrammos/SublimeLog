@@ -8,19 +8,21 @@ A bare-bones console logger for Sublime Text 2.
 
 Sublime Text 2 provides a console (accessible via ``Control-` ``) for interaction with its Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
 
-The log file is erased and recreated every time Sublime Text is launched.
+The log is erased and recreated each time Sublime Text is launched.
 
 ### Installation
 
-At some point I will submit this to [Will Bond's](http://wbond.net/) excellent [Package Control](http://wbond.net/sublime_packages/package_control/package_developers) repository for easy installation. For now, please install manually by cloning (or copying the contents of) this repository into your Sublime Text `./Packages` folder (or the `./Packages/User` subfolder to prevent overwrites whenever Sublime Text is upgraded).
+At some point I will submit this to [Will Bond's](http://wbond.net/) excellent [Package Control](http://wbond.net/sublime_packages/package_control/package_developers) repository for easy installation. For now, please install manually by cloning (or copying the contents of) this repository into your Sublime Text `./Packages` folder:
+
+    git clone https://github.com/yrammos/SublimeLog.git
 
 ### Commands
 
-For now SublimeLog supplies only one command, which simply toggles the logger. You may invoke it with a key-binding, by default `Command-Control-C` on OS X and `Alt-Control-C` on Windows/Linux, or manually via the console:
+For now SublimeLog supplies a single command that toggles the logger. The default key-binding is `Command-Control-C` on OS X or `Alt-Control-C` on Windows/Linux. You may also invoke it manually via the console:
 
     sublime.run_command("log_console_output")
 
-As usual, you may modify this binding in the sublime-keymapping file appropriate to your platform:
+The key-binding is adjustable in the JSON file appropriate to your platform:
 
     ./Packages/SublimeLog/Default ([OSX | Linux | Windows]).sublime-keymapping
 
@@ -28,25 +30,25 @@ I have not yet been able to test the plug-in or the default key-binding on Windo
 
 ### Retrieving the log
 
-By default, the log is stored in the following plain-text file:
+By default, the console is logged in the following plain-text file:
 
     [HOME]/.subl.log
 
-You may change this in the file:
+This destination is adjustable in:
 
     ./Packages/SublimeLog/SublimeLog.sublime-settings
     
-Whatever path-filename you enter there is relative to your root folder, so please be sure you have adequate write permissions or the plug-in will complain politely.
+Whatever path-filename you declare for the log is relative to your root folder, so please be sure you have adequate write permissions or the plug-in will complain politely.
 
-Also note that Sublime Text must be restarted for changes to take effect.
+Note that Sublime Text must be restarted for changes to take effect.
 
 ### Serving suggestion
 
-I created this to complement my LaTeX workflow during my dissertation writing. I have a terminal session (a pane in a tmux session, to be exact, but that's another story altogether) which is constantly monitoring the log file for changes:
+I wrote this plug-in as a complement to my dissertation LaTeX workflow. I just keep a terminal session open (a pane in a tmux session, to be exact) and have it constantly monitor the log file for changes:
 
     tail -f ~/.subl.log
 
-This allows me to selectively view and store the Sublime Text console stream in real-time, and in a separate window, without having to open and close the console itself.
+This provides me with a dynamic view of the console stream in a separate window, without the space- and time-consuming tedium of opening and closing the console itself.
 
 
 Available under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Feel free to modify and redistribute.
