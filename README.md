@@ -12,7 +12,7 @@ The log is erased and recreated each time Sublime Text is launched.
 
 ### Installation
 
-At some point I will submit this to [Will Bond's](http://wbond.net/) excellent [Package Control](http://wbond.net/sublime_packages/package_control/package_developers) repository for easy installation. For now, please install manually by cloning (or copying the contents of) this repository into your Sublime Text `./Packages` folder:
+The most straightforward installation method is by far via [Will Bond's](http://wbond.net/) superb [Package Control](http://wbond.net/sublime_packages/package_control/package_developers). Alternatively, you may clone (or copy the contents of) this repository into your Sublime Text `./Packages` folder:
 
     git clone https://github.com/yrammos/SublimeLog.git
 
@@ -51,7 +51,7 @@ I wrote this plug-in as a complement to my dissertation LaTeX workflow. I just k
 This provides me with a dynamic view of the console stream in a separate window, without the space- and time-consuming tedium of opening and closing the console itself.
 
 
-Available under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Feel free to modify and redistribute.
+Available under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Feel free to fork, modify and redistribute.
 
 © 2012 Yannis Rammos
 

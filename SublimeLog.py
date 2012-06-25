@@ -22,7 +22,6 @@ class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
         # Path handling should be cross-platform but has only been tested on OS X (for lack of access to other systems).
         settings = sublime.load_settings("LogConsoleOutput.sublime-settings")
         self.logfilename = os.path.abspath(settings.get("logfile", os.path.join(os.path.expanduser("~"), ".subl.log")))
-        print self.logfilename
 
         # We open and truncate log file, or create a blank one. In case of an exception we exit.
         try:
