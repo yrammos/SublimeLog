@@ -20,7 +20,7 @@ class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
 
         # Then we obtain the log filename from the settings, if available. Otherwise use a default value.
         # Path handling should be cross-platform but has only been tested on OS X (for lack of access to other systems).
-        settings = sublime.load_settings("LogConsoleOutput.sublime-settings")
+        settings = sublime.load_settings("SublimeLog.sublime-settings")
         self.logfilename = os.path.abspath(settings.get("logfile", os.path.join(os.path.expanduser("~"), ".subl.log")))
 
         # We open and truncate log file, or create a blank one. In case of an exception we exit.
