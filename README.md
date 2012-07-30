@@ -30,8 +30,6 @@ or, to prevent overwrites following plugin updates, in a corresponding file with
 
     ./Packages/User/SublimeLog ({OSX | Linux | Windows}).sublime-keymapping
 
-I have not yet been able to test the plug-in or the default key-binding on Windows or Linux, so please do let me know of any issues.
-
 ### Retrieving the log
 
 By default, the console is logged in the following plain-text file:
