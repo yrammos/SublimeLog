@@ -48,6 +48,10 @@ Whatever path-filename you declare for the log is relative to your root folder, 
 
 Note that Sublime Text must be restarted for changes to take effect.
 
+### Limitations
+
+Due to technical limitations beyond my control, the plug does not capture "system" messages output to the console by Sublime Text 2 itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.
+
 ### Serving suggestion
 
 I wrote this plug-in as a complement to my dissertation LaTeX workflow. Within a dedicated terminal session, or a tmux pane for that matter, I constantly monitor the log file for changes:
