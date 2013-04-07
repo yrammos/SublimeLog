@@ -72,6 +72,4 @@ This provides me with a dynamic view of the console stream in a separate window,
 #### 6/22/2012
 - NEW: First release.
 
-Available under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Feel free to fork, modify and redistribute.
-
-© 2012 Yannis Rammos
+Copyright © 2012-3 by [Yannis Rammos](twitter.com/yannisrammos). This work is made available under the terms of the Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) license, <http://creativecommons.org/licenses/by-sa/3.0/>.
