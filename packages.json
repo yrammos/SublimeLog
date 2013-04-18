@@ -3,7 +3,7 @@
 	"packages": [
 		{
 			"name": "SublimeLogger",
-			"description": "A bare-bones console logger for Sublime Text 2.",
+			"description": "A bare-bones console logger for Sublime Text 2 and 3.",
 			"author": "Yannis Rammos",
 			"homepage": "https://github.com/yrammos/SublimeLog",
 			"last_modified": "2013-04-18 07:00:00",
