@@ -6,7 +6,7 @@ A bare-bones console logger for Sublime Text 2 and 3.
 
 ### Description
 
-Sublime Text 2 and 3 provide a console (accessible via ``Control-` ``) for interaction with their Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
+[Sublime Text 2 and 3](http://www.sublimetext.com) provide a console (accessible via ``Control-` ``) for interaction with their Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
 
 The log is erased and recreated each time Sublime Text is launched.
 
@@ -46,7 +46,7 @@ or, preferably, in the User subfolder:
     
 Whatever path-filename you declare for the log is relative to your root folder, so please be sure you have adequate write permissions or the plug-in will complain politely.
 
-Note that Sublime Text must be restarted for changes to take effect.
+Note that Sublime Text no longer needs to be restarted for changes to these settings to take effect.
 
 ### Limitations
 
