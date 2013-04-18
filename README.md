@@ -62,6 +62,9 @@ This provides me with a dynamic view of the console stream in a separate window,
 
 ### Version history
 
+#### 4/18/2013
+- NEW: Support for Sublime Text 3
+
 #### 7/17/2012
 - NEW: Added preferences menu (Sublime Text 2 > Preferences > Package Settings > SublimeLog).
 - FIXED: Default and user preferences are now honored as expected.
