@@ -1,12 +1,12 @@
 SublimeLog
 ==========
 
-A bare-bones console logger for Sublime Text 2.
+A bare-bones console logger for Sublime Text 2 and 3.
 
 
 ### Description
 
-Sublime Text 2 provides a console (accessible via ``Control-` ``) for interaction with its Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
+Sublime Text 2 and 3 provide a console (accessible via ``Control-` ``) for interaction with their Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
 
 The log is erased and recreated each time Sublime Text is launched.
 
@@ -50,7 +50,7 @@ Note that Sublime Text must be restarted for changes to take effect.
 
 ### Limitations
 
-Due to technical limitations beyond my control, the plug does not capture "system" messages output to the console by Sublime Text 2 itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.
+Due to technical limitations beyond my control, the plug does not capture "system" messages output to the console by Sublime Text itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.
 
 ### Serving suggestion
 
@@ -63,11 +63,11 @@ This provides me with a dynamic view of the console stream in a separate window,
 ### Version history
 
 #### 4/18/2013
-- NEW: Support for Sublime Text 3
+- NEW: Adds support for Sublime Text 3
 - NEW: Settings modifications no longer necessitate an editor restart to take effect.
 
 #### 7/17/2012
-- NEW: Added preferences menu (Sublime Text 2 > Preferences > Package Settings > SublimeLog).
+- NEW: Adds preferences menu (Sublime Text 2 > Preferences > Package Settings > SublimeLog).
 - FIXED: Default and user preferences are now honored as expected.
 
 #### 6/26/2012
