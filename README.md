@@ -18,7 +18,7 @@ The most straightforward installation method is by far via [Will Bond's](http://
 
 ### Commands
 
-For now SublimeLog supplies a single command that toggles the logger. The default key-binding is `Command-Control-C` on OS X or `Alt-Control-C` on Windows/Linux. You may also invoke it via the command palette (⌘-Shift-P on a Mac or Ctrl-Shift-P otherwise): `SublimeLog: Toggle logger (on/off)`
+For now SublimeLog supplies a single command that toggles the logger. The default key-binding is `Command-Control-C` on OS X or `Alt-Control-C` on Windows/Linux. You may also invoke it via the command palette (`⌘-Shift-P` on a Mac or `Ctrl-Shift-P` otherwise): `SublimeLog: Toggle logger (on/off)`
 
 The key-binding is adjustable in the default JSON file appropriate to your platform:
 
