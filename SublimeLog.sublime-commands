@@ -1,0 +1,3 @@
+[
+	{ "caption": "SublimeLog: Toggle logger (on/off)", "command": "log_console_output"}
+]
