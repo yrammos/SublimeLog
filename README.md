@@ -41,14 +41,14 @@ This default destination is adjustable in:
 or, preferably, in the User subfolder:
 
 	./Packages/User/SublimeLog.sublime-settings
-    
+
 Whatever path-filename you declare for the log is relative to your root folder, so please be sure you have adequate write permissions or the plug-in will complain politely.
 
 Note that Sublime Text no longer needs to be restarted for changes to these settings to take effect.
 
 ### Limitations
 
-Due to technical limitations beyond my control, the plug does not capture "system" messages output to the console by Sublime Text itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.
+Due to technical limitations beyond my control, the plug in does not capture "system" messages output to the console by Sublime Text itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.
 
 ### Serving suggestion
 
@@ -56,12 +56,12 @@ I wrote this plug-in as a complement to my dissertation LaTeX workflow. Within a
 
     tail -f ~/.subl.log
 
-This provides me with a dynamic view of the console stream in a separate window, without the space- and time-consuming tedium of opening and closing the console itself.
+This provides me with a dynamic view of the console stream in a separate window, without the space- and time-consuming tedium of toggling the console view.
 
 ### Version history
 
 #### 4/18/2013
-- NEW: Adds support for Sublime Text 3
+- NEW: Support for Sublime Text 3
 - NEW: Logger may now be toggled via the command palette.
 - NEW: Settings modifications no longer necessitate an editor restart to take effect.
 
