@@ -61,7 +61,7 @@ This provides me with a dynamic view of the console stream in a separate window,
 ### Version history
 
 #### 4/18/2013
-- NEW: Support for Sublime Text 3
+- NEW: Support for Sublime Text 3.
 - NEW: Logger may now be toggled via the command palette.
 - NEW: Settings modifications no longer necessitate an editor restart to take effect.
 
