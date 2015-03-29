@@ -48,7 +48,9 @@ Note that Sublime Text no longer needs to be restarted for changes to these sett
 
 ### Limitations
 
-Due to technical limitations beyond my control, the plug in does not capture "system" messages output to the console by Sublime Text itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.
+~~Due to technical limitations beyond my control, the plug in does not capture "system" messages output to the console by Sublime Text itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.~~
+
+**Good news:** This limitation appears to have been lifted in the latest betas of SublimeText 3.
 
 ### Serving suggestion
 
