@@ -27,7 +27,7 @@ class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
             self.logfilename = os.path.abspath(self.logfilename)
         # We open and truncate log file, or create a blank one. In case of an exception we exit.
         try:
-            self.logfile = open(self.logfilename, "w", 1)
+            self.logfile = open(self.logfilename, "w", 1, 'utf-8')
             self.logfile.truncate(0)
             print("SublimeLog: Log file path is " + self.logfilename)
             self.ready = True
@@ -51,11 +51,11 @@ class LogConsoleOutputCommand(sublime_plugin.ApplicationCommand):
                 sublime.status_message("SublimeLog: Console logging activated (" + self.logfilename + ").")
                 sys.stdout = self
                 sys.stderr = self
-                print ("=> => => Console logging activated (" + self.logfilename + "). Timestamp: " + time.strftime("%d %b %Y, %X", time.localtime()) + ".")
+                print ("=> => => [" + time.strftime("%d %b %Y, %X", time.localtime()) + "] Console logging activated (" + self.logfilename + ").")
             else:
                 self.active = False
                 sublime.status_message("SublimeLog: Console logging deactivated (" + self.logfilename + ").")
-                print ("<= <= <= Console logging deactivated (" + self.logfilename + "). Timestamp: " + time.strftime("%d %b %Y, %X", time.localtime()) + ".")
+                print ("<= <= <= [" + time.strftime("%d %b %Y, %X", time.localtime()) + "] Console logging deactivated (" + self.logfilename + ").")
                 sys.stdout = self.out_backup
                 sys.stderr = self.err_backup
 
