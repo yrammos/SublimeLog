@@ -1,12 +1,12 @@
 SublimeLog
 ==========
 
-A bare-bones console logger for Sublime Text 2 and 3.
+A bare-bones console logger for Sublime Text ~~~~2 and~~~~ 3.
 
 
 ### Description
 
-[Sublime Text 2 and 3](http://www.sublimetext.com) provide a console (accessible via ``Control-` ``) for interaction with their Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
+[Sublime Text 3](http://www.sublimetext.com) provides a console (accessible via ``Control-` ``) for interaction with the editor's Python-based innards and plug-in architecture. This plug-in logs the console contents into a plain-text file ornamented with logger activation/deactivation timestamps.
 
 The log is erased and recreated each time Sublime Text is launched.
 
@@ -46,21 +46,21 @@ Whatever path-filename you declare for the log is relative to your root folder, 
 
 Note that Sublime Text no longer needs to be restarted for changes to these settings to take effect.
 
-### Limitations
-
-~~Due to technical limitations beyond my control, the plug in does not capture "system" messages output to the console by Sublime Text itself. Among them are, for example, `Reloading plugin...` messages. This should be inconsequential for most users of `SublimeLog` but Your Mileage May Vary. See [this thread](http://www.sublimetext.com/forum/viewtopic.php?f=5&t=7655) if you are interested in further details.~~
-
-**Good news:** This limitation appears to have been lifted in the latest betas of SublimeText 3.
-
 ### Serving suggestion
 
-I wrote this plug-in as a complement to my dissertation LaTeX workflow. Within a dedicated terminal session, or a tmux pane for that matter, I constantly monitor the log file for changes:
+I wrote this plug-in as a complement to my LaTeX workflow. Within a dedicated terminal session, or a tmux pane for that matter, I constantly monitor the log file for changes:
 
     tail -f ~/.subl.log
 
 This provides me with a dynamic view of the console stream in a separate window, without the space- and time-consuming tedium of toggling the console view.
 
+If need to maintain a history of log files following successive restarts of the editor, `multitail` is probably the best solution. It runs on all major Unix platforms and on Windows via Cygwin.
+
 ### Version history
+
+#### 12/2/2016
+- FIXED: Non-ASCII timestamps no longer cause a crash.
+- NEW: Support for Sublime Text 2 is dropped.
 
 #### 4/18/2013
 - NEW: Support for Sublime Text 3.
